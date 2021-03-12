@@ -1,1 +1,1 @@
-# Property-value-slider
+# Property value slider (UK)
