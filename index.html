@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Value Slider - UK</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="ea-calc-inpage">
+      <h1>Estate Agent Fee Calculator</h1>
+      <form>
+        <label for="propertyVal" class="big-label"
+          >Estimated property value: <span id="estPrice"></span></label
+        ><input
+          id="propertyVal"
+          name="propertyVal"
+          type="range"
+          min="90000"
+          max="3500000"
+          step="10000"
+          value="253000"
+        />
+
+        <h2 class="pinkResult">
+          <span class="intro">Savings made:</span>
+          <span id="oeaSave" class="resultz"></span>
+          <span class="finale">using a fixed-fee online estate agent</span>
+          <a
+            href="/advice/guides-for-homeowners/i-am-selling/compare-online-estate-agents/"
+            >Compare online estate agents</a
+          >
+        </h2>
+        <h2>
+          Results based on a high street estate agent fee (<span
+            id="eaPercVal"
+          ></span
+          >% incl VAT) and an online estate agent fixed-fee of:
+          <span id="estFee"></span>
+        </h2>
+        <hr />
+        <h3>Update calculator settings</h3>
+        <div class="fity">
+          <label for="eaPerc"
+            >High street estate agents fee - percentage (including VAT)</label
+          >
+          <input
+            id="eaPerc"
+            name="eaPerc"
+            type="number"
+            placeholder="Default for the UK is 1.48%"
+            min="0"
+            max="100"
+            value="1.42"
+          />
+        </div>
+        <div class="fity">
+          <label for="oeaFlat"
+            >Online estate agents fixed fee (including VAT) in £</label
+          >
+          <input
+            id="oeaFlat"
+            name="oeaFlat"
+            type="number"
+            placeholder="Default for the UK is £500"
+            min="0"
+            max="10000"
+            value="500"
+          />
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+  </body>
+</html>
